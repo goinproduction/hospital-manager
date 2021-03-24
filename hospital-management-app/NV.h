@@ -6,6 +6,7 @@ using namespace std;
 class NV {
 	protected:
 		string MaNV, hoTen, SDT, diaChi;
+		int chucVu;
 		virtual void Nhap(istream& in) = 0;
 		virtual void Xuat(ostream& out) const = 0;
 	public:
@@ -19,11 +20,16 @@ class NV {
 class BacSi : public NV {
 	private:
 		double luongCB, phuCap;
-		int soNgayCong, chucVu;
+		int soNgayCong;
 	public:
 		BacSi();
+
 		BacSi(const BacSi& obj);
+
 		~BacSi();
+
+		void Nhap(istream& in);
+
 		double getLuong() {
 			return this->luongCB;
 		}
@@ -40,11 +46,16 @@ class BacSi : public NV {
 class TTDP : public NV {
 	private:
 		double luongCB, phuCap;
-		int soNgayCong, chucVu;
+		int soNgayCong;
 	public:
 		TTDP();
+
 		TTDP(const TTDP& obj);
+
 		~TTDP();
+
+		void Nhap(istream& in);
+
 		double getLuong() {
 			return this->luongCB;
 		}
@@ -61,11 +72,16 @@ class TTDP : public NV {
 class TaiVu : public NV {
 	private:
 		double luongCB, phuCap;
-		int soNgayCong, chucVu;
+		int soNgayCong;
 	public:
 		TaiVu();
+
 		TaiVu(const TaiVu& obj);
+
 		~TaiVu();
+
+		void Nhap(istream& in);
+
 		double getLuong() {
 			return this->luongCB;
 		}
@@ -82,11 +98,16 @@ class TaiVu : public NV {
 class BanThuoc : public NV {
 	private:
 		double luongCB, phuCap;
-		int soNgayCong, chucVu;
+		int soNgayCong;
 	public:
 		BanThuoc();
+
 		BanThuoc(const BanThuoc& obj);
+
 		~BanThuoc();
+
+		void Nhap(istream& in);
+
 		double getLuong() {
 			return this->luongCB;
 		}
@@ -103,11 +124,16 @@ class BanThuoc : public NV {
 class KeToan : public NV {
 	private:
 		double luongCB, phuCap;
-		int soNgayCong, chucVu;
+		int soNgayCong;
 	public:
 		KeToan();
+
 		KeToan(const KeToan& obj);
+
 		~KeToan();
+
+		void Nhap(istream& in);
+
 		double getLuong() {
 			return this->luongCB;
 		}

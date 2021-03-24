@@ -6,9 +6,6 @@ NV::NV()
 	this->hoTen = nullptr;
 	this->SDT = nullptr;
 	this->diaChi = nullptr;
-	this->luongCB = NULL;
-	this->phuCap = NULL;
-	this->soNgayCong = NULL;
 	this->chucVu = NULL;
 }
 
@@ -80,6 +77,9 @@ ostream& operator<<(ostream& out, const NV& NV)
 
 BacSi::BacSi()
 {
+	this->luongCB = NULL;
+	this->phuCap = NULL;
+	this->soNgayCong = NULL;
 }
 
 BacSi::BacSi(const BacSi& obj)
@@ -90,50 +90,124 @@ BacSi::~BacSi()
 {
 }
 
+void BacSi::Nhap(istream& in)
+{
+	cout << "Luong CB: ";
+	in >> this->luongCB;
+	cout << "So ngay cong: ";
+	in >> this->soNgayCong;
+	cout << "Phu cap: ";
+	in >> this->phuCap;
+}
+
 TTDP::TTDP()
 {
+	this->luongCB = NULL;
+	this->phuCap = NULL;
+	this->soNgayCong = NULL;
 }
 
 TTDP::TTDP(const TTDP& obj)
 {
+	this->luongCB = obj.luongCB;
+	this->phuCap = obj.phuCap;
+	this->soNgayCong = obj.soNgayCong;
 }
 
 TTDP::~TTDP()
 {
 }
 
+void TTDP::Nhap(istream& in)
+{
+	cout << "Luong CB: ";
+	in >> this->luongCB;
+	cout << "So ngay cong: ";
+	in >> this->soNgayCong;
+	cout << "Phu cap: ";
+	in >> this->phuCap;
+}
+
 TaiVu::TaiVu()
 {
+	this->luongCB = NULL;
+	this->phuCap = NULL;
+	this->soNgayCong = NULL;
 }
 
 TaiVu::TaiVu(const TaiVu& obj)
 {
+	this->luongCB = obj.luongCB;
+	this->phuCap = obj.phuCap;
+	this->soNgayCong = obj.soNgayCong;
 }
 
 TaiVu::~TaiVu()
 {
 }
 
+void TaiVu::Nhap(istream& in)
+{
+	cout << "Luong CB: ";
+	in >> this->luongCB;
+	cout << "So ngay cong: ";
+	in >> this->soNgayCong;
+	cout << "Phu cap: ";
+	in >> this->phuCap;
+}
+
 BanThuoc::BanThuoc()
 {
+	this->luongCB = NULL;
+	this->phuCap = NULL;
+	this->soNgayCong = NULL;
 }
 
 BanThuoc::BanThuoc(const BanThuoc& obj)
 {
+	this->luongCB = obj.luongCB;
+	this->phuCap = obj.phuCap;
+	this->soNgayCong = obj.soNgayCong;
 }
 
 BanThuoc::~BanThuoc()
 {
 }
 
+void BanThuoc::Nhap(istream& in)
+{
+	cout << "Luong CB: ";
+	in >> this->luongCB;
+	cout << "So ngay cong: ";
+	in >> this->soNgayCong;
+	cout << "Phu cap: ";
+	in >> this->phuCap;
+}
+
 KeToan::KeToan()
 {
+	this->luongCB = NULL;
+	this->phuCap = NULL;
+	this->soNgayCong = NULL;
 }
 
 KeToan::KeToan(const KeToan& obj)
 {
+	this->luongCB = obj.luongCB;
+	this->phuCap = obj.phuCap;
+	this->soNgayCong = obj.soNgayCong;
 }
 
 KeToan::~KeToan()
 {
+}
+
+void KeToan::Nhap(istream& in)
+{
+	cout << "Luong CB: ";
+	in >> this->luongCB;
+	cout << "So ngay cong: ";
+	in >> this->soNgayCong;
+	cout << "Phu cap: ";
+	in >> this->phuCap;
 }

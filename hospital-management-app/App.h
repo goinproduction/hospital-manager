@@ -8,7 +8,7 @@ public:
 	void Menu() {
 		int luaChon;
 		cout << "============================>> QUAN LY BENH VIEN <<============================\n";
-		cout << "\t\t5. Nhan vien Ke toan\n";
+		cout << "\t\t5. Bo phan Ke toan" << endl;
 		cout << "\t\tNhap lua chon: ";
 		cin >> luaChon;
 	}

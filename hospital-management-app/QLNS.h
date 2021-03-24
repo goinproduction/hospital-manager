@@ -4,11 +4,11 @@
 #include<string>
 using namespace std;
 
-class QLNS: public NV {
-	private:
-		vector<NV*> nhanVienArr;
+class QLNS : NV, BacSi, TTDP, TaiVu, BanThuoc, KeToan {
 	public:
 		QLNS();
 		QLNS(const QLNS& obj);
+		void Nhap(istream& in);
+		void Xuat(ostream& out);
 		~QLNS();
 };
