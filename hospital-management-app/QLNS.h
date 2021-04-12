@@ -1,14 +1,19 @@
+#ifndef QLNS_HEADER
+#define QLNS_HEADER
+
 #include "NV.h"
 #include<iostream>
-#include<vector>
 #include<string>
 using namespace std;
 
-class QLNS : NV, BacSi, TTDP, TaiVu, BanThuoc, KeToan {
+class QLNS {
 	public:
 		QLNS();
 		QLNS(const QLNS& obj);
 		void Nhap(istream& in);
 		void Xuat(ostream& out);
+		void QLNSMenu();
 		~QLNS();
 };
+
+#endif // !QLNS_HEADER

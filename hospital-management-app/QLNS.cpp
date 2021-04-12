@@ -1,4 +1,5 @@
 #include "QLNS.h"
+#include "App.h"
 
 QLNS::QLNS()
 {
@@ -47,6 +48,35 @@ void QLNS::Nhap(istream& in)
 	}
 }
 
+void QLNS::Xuat(ostream& out)
+{
+}
+
+
+void QLNS::QLNSMenu()
+{
+	int luaChon;
+	cout << "\t=======>> QUAN LY NHAN VIEN <<=======" << endl;
+	cout << "\t\t1. Nhap thong tin" << endl;
+	cout << "\t\t2. Xuat thong tin" << endl;
+	cout << "\t\t3. Tim kiem" << endl;
+	cout << "\t\t0. Quay lai" << endl;
+	cout << "\t\tNhap lua chon: ";
+	cin >> luaChon;
+	if (luaChon == 1)
+	{
+
+	}
+	else if (luaChon == 2)
+	{
+
+	}
+	else if (luaChon == 0)
+	{
+		system("cls");
+		QLNSMenu();
+	}
+}
 
 QLNS::~QLNS()
 {

@@ -43,7 +43,7 @@ istream& operator>>(istream& in, NV& NV)
 	return in;
 }
 
-ostream& operator<<(ostream& out, const NV& NV)
+ostream& operator<<(ostream& out, NV& NV)
 {
 	// TODO: insert return statement here
 	fflush(stdin);

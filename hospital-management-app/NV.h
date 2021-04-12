@@ -1,3 +1,6 @@
+#ifndef NV_HEADER
+#define NV_HEADER
+
 #include<iostream>
 #include<vector>
 #include<string>
@@ -8,12 +11,12 @@ class NV {
 		string MaNV, hoTen, SDT, diaChi;
 		int chucVu;
 		virtual void Nhap(istream& in) = 0;
-		virtual void Xuat(ostream& out) const = 0;
+		virtual void Xuat(ostream& out) = 0;
 	public:
 		NV();
 		NV(const NV& obj);
-		friend istream& operator >> (istream& in, NV& NV);
-		friend ostream& operator << (ostream& out, const NV& NV);
+		friend istream& operator >> (istream& in,  NV& NV);
+		friend ostream& operator << (ostream& out, NV& NV);
 		~NV();
 };
 
@@ -147,3 +150,4 @@ class KeToan : public NV {
 		}
 };
 
+#endif

@@ -1,4 +1,5 @@
 #include "App.h"
+#include "QLNS.h"
 #include<iostream>
 #include<string>
 using namespace std;
