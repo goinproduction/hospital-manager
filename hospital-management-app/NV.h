@@ -12,6 +12,7 @@ class NV {
 		int chucVu;
 		virtual void Nhap(istream& in) = 0;
 		virtual void Xuat(ostream& out) = 0;
+		NV** NhanVien = NULL;
 	public:
 		NV();
 		NV(const NV& obj);
@@ -21,133 +22,138 @@ class NV {
 };
 
 class BacSi : public NV {
-	private:
-		double luongCB, phuCap;
-		int soNgayCong;
-	public:
-		BacSi();
+private:
+	double luongCB, phuCap;
+	int soNgayCong;
+public:
+	BacSi();
 
-		BacSi(const BacSi& obj);
+	BacSi(const BacSi& obj);
 
-		~BacSi();
+	~BacSi();
 
-		void Nhap(istream& in);
+	void Nhap(istream& in);
+	void Xuat(ostream& out);
 
-		double getLuong() {
-			return this->luongCB;
-		}
+	double getLuong() {
+		return this->luongCB;
+	}
 
-		double getPhuCap() {
-			return this->phuCap;
-		}
+	double getPhuCap() {
+		return this->phuCap;
+	}
 
-		int getSoNgayCong() {
-			return this->soNgayCong;
-		}
+	int getSoNgayCong() {
+		return this->soNgayCong;
+	}
 };
 
 class TTDP : public NV {
-	private:
-		double luongCB, phuCap;
-		int soNgayCong;
-	public:
-		TTDP();
+private:
+	double luongCB, phuCap;
+	int soNgayCong;
+public:
+	TTDP();
 
-		TTDP(const TTDP& obj);
+	TTDP(const TTDP& obj);
 
-		~TTDP();
+	~TTDP();
 
-		void Nhap(istream& in);
+	void Nhap(istream& in);
+	void Xuat(ostream& out);
+	double getLuong() {
+		return this->luongCB;
+	}
 
-		double getLuong() {
-			return this->luongCB;
-		}
+	double getPhuCap() {
+		return this->phuCap;
+	}
 
-		double getPhuCap() {
-			return this->phuCap;
-		}
-
-		int getSoNgayCong() {
-			return this->soNgayCong;
-		}
+	int getSoNgayCong() {
+		return this->soNgayCong;
+	}
 };
 
 class TaiVu : public NV {
-	private:
-		double luongCB, phuCap;
-		int soNgayCong;
-	public:
-		TaiVu();
+private:
+	double luongCB, phuCap;
+	int soNgayCong;
+public:
+	TaiVu();
 
-		TaiVu(const TaiVu& obj);
+	TaiVu(const TaiVu& obj);
 
-		~TaiVu();
+	~TaiVu();
 
-		void Nhap(istream& in);
+	void Nhap(istream& in);
+	void Xuat(ostream& out);
 
-		double getLuong() {
-			return this->luongCB;
-		}
+	double getLuong() {
+		return this->luongCB;
+	}
 
-		double getPhuCap() {
-			return this->phuCap;
-		}
+	double getPhuCap() {
+		return this->phuCap;
+	}
 
-		int getSoNgayCong() {
-			return this->soNgayCong;
-		}
+	int getSoNgayCong() {
+		return this->soNgayCong;
+	}
 };
 
 class BanThuoc : public NV {
-	private:
-		double luongCB, phuCap;
-		int soNgayCong;
-	public:
-		BanThuoc();
+private:
+	double luongCB, phuCap;
+	int soNgayCong;
+public:
+	BanThuoc();
 
-		BanThuoc(const BanThuoc& obj);
+	BanThuoc(const BanThuoc& obj);
 
-		~BanThuoc();
+	~BanThuoc();
 
-		void Nhap(istream& in);
+	void Nhap(istream& in);
+	void Xuat(ostream& out);
 
-		double getLuong() {
-			return this->luongCB;
-		}
+	double getLuong() {
+		return this->luongCB;
+	}
 
-		double getPhuCap() {
-			return this->phuCap;
-		}
+	double getPhuCap() {
+		return this->phuCap;
+	}
 
-		int getSoNgayCong() {
-			return this->soNgayCong;
-		}
+	int getSoNgayCong() {
+		return this->soNgayCong;
+	}
 };
 
 class KeToan : public NV {
-	private:
-		double luongCB, phuCap;
-		int soNgayCong;
-	public:
-		KeToan();
+private:
+	double luongCB, phuCap;
+	int soNgayCong;
+public:
+	KeToan();
 
-		KeToan(const KeToan& obj);
+	KeToan(const KeToan& obj);
 
-		~KeToan();
+	~KeToan();
 
-		void Nhap(istream& in);
+	void Nhap(istream& in);
+	void Xuat(ostream& out);
 
-		double getLuong() {
-			return this->luongCB;
-		}
+	double getLuong() {
+		return this->luongCB;
+	}
 
-		double getPhuCap() {
-			return this->phuCap;
-		}
+	double getPhuCap() {
+		return this->phuCap;
+	}
 
-		int getSoNgayCong() {
-			return this->soNgayCong;
-		}
+	int getSoNgayCong() {
+		return this->soNgayCong;
+	}
 };
+
 
 #endif

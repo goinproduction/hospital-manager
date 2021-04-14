@@ -12,39 +12,41 @@ QLNS::QLNS(const QLNS& obj)
 void QLNS::Nhap(istream& in)
 {
 	int luaChon;
-	cout << "============================>> QUAN LY BENH VIEN <<============================\n";
-	cout << "\t\t1. Bac si" << endl;
-	cout << "\t\t2. Dieu phoi" << endl;
-	cout << "\t\t3. Tai vu" << endl;
-	cout << "\t\t4. Ban thuoc" << endl;
-	cout << "\t\t5. Ke toan" << endl;
-	cout << "\t\t0. Thoat ra" << endl;
-	cout << "\t\tNhap lua chon: ";
-	cin >> luaChon;
-	if (luaChon == 0)
+	int n;
+	cout << "So luong nhan vien can nhap: ";
+	cin >> n;
+	for (int i = 0; i < n; i++)
 	{
-
-	}
-	else if (luaChon == 1)
-	{
-
-	}
-	else if (luaChon == 2)
-	{
-
-	}
-	else if (luaChon == 3)
-	{
-
-	}
-	else if (luaChon == 4)
-	{
-
-	}
-	else if (luaChon == 0)
-	{
-		system("cls");
-
+		cout << "\t\tChon kieu nhan vien" << endl;
+		cout << "\t\t1. Bac si" << endl;
+		cout << "\t\t2. Dieu phoi" << endl;
+		cout << "\t\t3. Tai vu" << endl;
+		cout << "\t\t4. Ban thuoc" << endl;
+		cout << "\t\t5. Ke toan" << endl;
+		cout << "\t\t0. Quay lai" << endl;
+		cout << "\t\tNhap lua chon: ";
+		cin >> luaChon;
+		switch (luaChon)
+		{
+		case 1:
+			this->NhanVien[i] = new BacSi();
+			break;
+		case 2:
+			this->NhanVien[i] = new TTDP();
+			break;
+		case 3:
+			this->NhanVien[i] = new TaiVu();
+			break;
+		case 4:
+			this->NhanVien[i] = new BanThuoc();
+			break;
+		case 5:
+			this->NhanVien[i] = new KeToan();
+			break;
+		default:
+			break;
+		}
+		cin >> *NhanVien[i];
 	}
 }
 
@@ -65,7 +67,6 @@ void QLNS::QLNSMenu()
 	cin >> luaChon;
 	if (luaChon == 1)
 	{
-
 	}
 	else if (luaChon == 2)
 	{

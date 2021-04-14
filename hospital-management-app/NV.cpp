@@ -2,11 +2,6 @@
 
 NV::NV()
 {
-	this->MaNV = nullptr;
-	this->hoTen = nullptr;
-	this->SDT = nullptr;
-	this->diaChi = nullptr;
-	this->chucVu = NULL;
 }
 
 NV::NV(const NV& obj)
@@ -100,6 +95,10 @@ void BacSi::Nhap(istream& in)
 	in >> this->phuCap;
 }
 
+void BacSi::Xuat(ostream& out)
+{
+}
+
 TTDP::TTDP()
 {
 	this->luongCB = NULL;
@@ -126,6 +125,10 @@ void TTDP::Nhap(istream& in)
 	in >> this->soNgayCong;
 	cout << "Phu cap: ";
 	in >> this->phuCap;
+}
+
+void TTDP::Xuat(ostream& out)
+{
 }
 
 TaiVu::TaiVu()
@@ -156,6 +159,10 @@ void TaiVu::Nhap(istream& in)
 	in >> this->phuCap;
 }
 
+void TaiVu::Xuat(ostream& out)
+{
+}
+
 BanThuoc::BanThuoc()
 {
 	this->luongCB = NULL;
@@ -184,6 +191,10 @@ void BanThuoc::Nhap(istream& in)
 	in >> this->phuCap;
 }
 
+void BanThuoc::Xuat(ostream& out)
+{
+}
+
 KeToan::KeToan()
 {
 	this->luongCB = NULL;
@@ -210,4 +221,8 @@ void KeToan::Nhap(istream& in)
 	in >> this->soNgayCong;
 	cout << "Phu cap: ";
 	in >> this->phuCap;
+}
+
+void KeToan::Xuat(ostream& out)
+{
 }

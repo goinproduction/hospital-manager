@@ -6,7 +6,7 @@
 #include<string>
 using namespace std;
 
-class QLNS {
+class QLNS: public NV {
 	public:
 		QLNS();
 		QLNS(const QLNS& obj);
