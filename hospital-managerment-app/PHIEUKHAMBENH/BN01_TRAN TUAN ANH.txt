@@ -1,8 +1,0 @@
-	      PHIEU KHAM BENH
----------------------------------------------
-TRAN TUAN ANH
-Tuoi: 45		Gioi tinh: 1
-Thoi gian tiep nhan: Sun May 23 21:44:37 2021
-Doi tuong: BHYT 90%
-Phong kham: 12
-So thu tu kham: 45
