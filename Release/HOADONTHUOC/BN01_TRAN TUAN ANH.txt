@@ -1,0 +1,15 @@
+	      HOA DON THUOC
+---------------------------------------------
+TRAN TUAN ANH
+Tuoi: 45		Gioi tinh: 1
+Doi tuong: BHYT 90%
+Ma the BHYT: GD1005201642
+---------------------------------------------
+Noi dung				So luong	Thanh tien BV		Thanh tien BH		Thanh tien
+
+Domitazol				1		2,288			2,059			229
+Cefoxitine Gerda 2g - (Cefoxitin)	3		685,200			616,680			68,520
+Cefepime Kabi 1g - (Cefepim)		10		619,000			557,100			61,900
+Ciprofloxacin 200mg			10		175,750			158,175			17,575
+
+											   TONG CONG: 148,224
