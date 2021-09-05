@@ -93,4 +93,4 @@ hoạt động.
 <h3>Phân hệ Bán thuốc</h3>
 <img src="/Source/assets/bt.PNG" alt="banthuoc">
 <h3>Phân hệ Kế toán</h3>
-<img src="/Source/assets/kt" alt="ketoan">
+<img src="/Source/assets/kt.PNG" alt="ketoan">
