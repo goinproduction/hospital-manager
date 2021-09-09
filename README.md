@@ -62,7 +62,7 @@
 - Đối với bệnh nhân mới thì nhập trực tiếp thông tin vào hệ thống, đối với bệnh nhân cũ thì chỉ cần nhập triệu chứng ban
 đầu. </br>
 - Bác sĩ điều trị cho bệnh nhân phải thuộc danh sách đã nhập ở phân hệ Quản lý nhân sự. </br>
-- Mã bệnh nhân không được trùng./</br>
+- Mã bệnh nhân không được trùng.</br>
 - Nếu chưa có thông tin bệnh nhân trong hệ thống thì các chức năng Xuất phiếu khám, Cập nhật, Xóa, Tìm kiếm sẽ không
 hoạt động.
 <h3>Phân hệ Tài vụ</h3>
